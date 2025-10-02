@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#13b6ec",
+              "background-light": "#f6f8f8",
+              "background-dark": "#101d22",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-20 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_535)">
+<path clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_535">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Dental Care</h2>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors" href="#">Team</a>
+<a class="text-sm font-medium text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors" href="#">Reviews</a>
+<a class="text-sm font-medium text-primary dark:text-primary" href="#">Contact</a>
+</nav>
+<a class="hidden md:inline-flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary/90" href="#">Book Appointment</a>
+<button class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<div class="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
+<div class="flex flex-col gap-12">
+<div>
+<h1 class="text-4xl font-bold tracking-tighter text-gray-900 dark:text-white sm:text-5xl">Contact Us</h1>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">We're here to help! Reach out with any questions or to schedule an appointment.</p>
+</div>
+<form action="#" class="space-y-6" method="POST">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="full-name">Full Name</label>
+<div class="mt-1">
+<input autocomplete="name" class="block w-full rounded-lg border-gray-300 bg-background-light dark:bg-background-dark dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary sm:text-sm h-12 px-4" id="full-name" name="full-name" placeholder="Enter your full name" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="email">Email Address</label>
+<div class="mt-1">
+<input autocomplete="email" class="block w-full rounded-lg border-gray-300 bg-background-light dark:bg-background-dark dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary sm:text-sm h-12 px-4" id="email" name="email" placeholder="Enter your email address" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="phone">Phone Number</label>
+<div class="mt-1">
+<input autocomplete="tel" class="block w-full rounded-lg border-gray-300 bg-background-light dark:bg-background-dark dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary sm:text-sm h-12 px-4" id="phone" name="phone" placeholder="Enter your phone number" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="message">Message</label>
+<div class="mt-1">
+<textarea class="block w-full rounded-lg border-gray-300 bg-background-light dark:bg-background-dark dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-4" id="message" name="message" placeholder="Type your message here" rows="4"></textarea>
+</div>
+</div>
+<div>
+<button class="w-full flex justify-center py-3 px-4 rounded-lg shadow-sm text-sm font-semibold text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">Send Message</button>
+</div>
+</form>
+</div>
+<div class="space-y-12">
+<div>
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white">Our Location</h2>
+<div class="mt-4 aspect-[16/9] w-full overflow-hidden rounded-xl">
+<div class="h-full w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIo_ZC58gi7z4tqqOOFHpgxG0UZq1nklAawJ7D9U0mjqCvSeGJ2R4MxZLYUkZB7Pr48EAHG3ix0MZJhq3CRchoD_2XKTXdIj2HVzMgXuaoK9Zyqk9tLU0ZrxvftP9ZRIdqfhomquSbWcX9SpAwvkyoZ0xTIsw1q9-Ni4WJbeLv9cK4o2sTa5dwKniAydFHzOee1t2ZLhZLvfJdvAGTRoYr4NDHRaziBvt3BYcIUwIy_uHWzKvI9j36JCxMbxX46iEAuLl_DpAclQQf");'></div>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-400">123 Main Street, Amsterdam, Netherlands</p>
+</div>
+<div class="space-y-8">
+<div>
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Opening Hours</h3>
+<div class="mt-4 space-y-3 border-t border-gray-200 dark:border-gray-700 pt-4">
+<div class="flex justify-between text-sm text-gray-600 dark:text-gray-400">
+<span>Monday - Friday</span>
+<span class="font-medium text-gray-900 dark:text-white">9:00 AM - 5:00 PM</span>
+</div>
+<div class="flex justify-between text-sm text-gray-600 dark:text-gray-400">
+<span>Saturday - Sunday</span>
+<span class="font-medium text-gray-900 dark:text-white">Closed</span>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Contact Information</h3>
+<div class="mt-4 space-y-3 border-t border-gray-200 dark:border-gray-700 pt-4">
+<div class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
+<span class="material-symbols-outlined text-lg">call</span>
+<a class="hover:text-primary transition-colors" href="tel:+31205551234">+31 20 555 1234</a>
+</div>
+<div class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
+<span class="material-symbols-outlined text-lg">mail</span>
+<a class="hover:text-primary transition-colors" href="mailto:info@dentalcare.nl">info@dentalcare.nl</a>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Getting Here</h3>
+<div class="mt-4 space-y-3 border-t border-gray-200 dark:border-gray-700 pt-4 text-sm text-gray-600 dark:text-gray-400">
+<p>We are conveniently located with ample street parking available. The nearest tram stop is just a short walk away, making us easily accessible by public transport.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-gray-100 dark:bg-gray-900">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="#">Team</a>
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="#">Reviews</a>
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400">© 2024 Dental Care. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
